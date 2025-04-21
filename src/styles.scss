@@ -1,0 +1,32 @@
+@use "flowbite/src/themes/default" as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    background-color: #1C3D3F;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+
+    // background-image: url("/image.jpg");
+    // background-size: cover;
+    // /* عشان الصورة تملأ الشاشة بالكامل */
+    // background-position: center;
+    // /* عشان الصورة تكون في المنتصف */
+    // background-attachment: fixed;
+    // /* عشان الصورة تتحرك مع السكروول */
+    // background-repeat: no-repeat;
+    // /* عشان الصورة متتكررشي */
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        /* بيخلي الصورة تتحرك مع السكروول على الشاشات الصغيرة */
+    }
+}
